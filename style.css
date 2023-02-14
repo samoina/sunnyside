@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  background-image:url("images/desktop/image-header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  height: 100vh;
+  padding: 40px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul {  
+  width: 40%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+header .title {
+  text-align: center;
+  padding-top: 100px;  
+}
+
+header h1 {
+  letter-spacing: 0.2rem;  
+}
+
+header img {
+  padding-top: 50px;
+}
+
