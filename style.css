@@ -1,3 +1,8 @@
+/* iMPORT fonts */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Mulish&display=swap');
+
+
+/* CUSTOM SETTINGS */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,6 +10,8 @@
 
 html, body {
   height: 100%;
+  font-family: 'Mulish', sans-serif;
+  background-color: #f1ebeb;
 }
 
 body {
@@ -12,41 +19,95 @@ body {
 }
 
 img {
+  display: block;
   max-width: 100%;
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+
+/* Header section */
 header {
-  background-image:url("images/desktop/image-header.jpg");
+  background-image:url("images/mobile/image-header.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #fff;
-  height: 100vh;
-  padding: 40px;
+  color: white;  
+  max-width: 100%;
+  height: 100%;
+  
 }
 
-header nav {
+header nav{
   display: flex;
   justify-content: space-between;
+  padding: 30px;
 }
 
-header nav ul {  
-  width: 40%;
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
+header nav .hidden {
+  display: none;
 }
 
 header .title {
   text-align: center;
-  padding-top: 100px;  
+   
 }
 
-header h1 {
-  letter-spacing: 0.2rem;  
+.title img {
+  display: inline;
 }
 
-header img {
-  padding-top: 50px;
+header h1 { 
+  letter-spacing: 0.2rem; 
+  line-height: 1.2;
+  font-family: 'EB Garamond', serif; 
+  font-size: 3rem;
+  padding: 50px 0px;
 }
 
+main {
+  display: grid;  
+}
+
+main .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  
+}
+
+main .text h2 {
+  padding-bottom: 20px;
+  font-family: 'EB Garamond', serif; 
+  text-align: center;
+}
+
+main .text p {
+  text-align: justify;
+}
+
+main .text .learn {
+  padding-top: 20px;
+  text-transform: uppercase;
+  text-align: left;
+  text-decoration: underline pink 0.4rem;  
+}
+
+main .text .learn:hover {
+  text-decoration: underline yellow 0.4rem;  
+  cursor: pointer;
+}
+
+#text-image-1 {
+  background-image:url("images/desktop/image-header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;  
+  max-width: 100%;
+  
+}
