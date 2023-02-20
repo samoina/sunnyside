@@ -3,6 +3,10 @@
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .p-1 {
   padding: 1em
 }
