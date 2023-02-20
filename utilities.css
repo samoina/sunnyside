@@ -1,0 +1,70 @@
+/* Utilities */
+.flex {
+  display: flex;
+}
+
+.p-1 {
+  padding: 1em
+}
+
+.p-2 {
+  padding: 2em
+}
+
+.p-3 {
+  padding: 3em
+}
+
+.p-4 {
+  padding: 4em
+}
+
+.p-5 {
+  padding: 5em
+}
+
+.pt-1 {
+  padding-top: 1em;
+}
+
+.pt-2 {
+  padding-top: 2em;
+}
+
+.pt-3 {
+  padding-top: 3em;
+}
+
+.pt-4 {
+  padding-top: 4em;
+}
+
+.pt-5 {
+  padding-top: 5em;
+}
+
+.pb-1 {
+  padding-bottom: 1em;
+}
+
+.pb-2 {
+  padding-bottom: 2em;
+}
+
+.pb-3 {
+  padding-bottom: 3em;
+}
+
+.pb-4 {
+  padding-bottom: 4em;
+}
+
+.pb-5 {
+  padding-bottom: 5em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
