@@ -265,6 +265,34 @@ I tried to change the order of just the first two children, but they'd swap and 
   order: 6;
 }
 
+/* TESTIMONIALS */
+.testimonials__container {
+  flex-direction: row;
+}
+
+/* DISPLAY */
+.display {
+  grid-template-columns: repeat(4, 25%);
+}
+
+/* FOOTER */
+.footer {
+  padding-bottom: 30px;
+}
+
+.footer__nav ul {
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 40%;
+  padding-bottom: 20px;
+}
+
+.footer__icons--position {
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 15%;
+  padding: 5px;
+}
 
   
 
