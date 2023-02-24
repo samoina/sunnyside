@@ -7,7 +7,7 @@
   box-sizing: border-box;
   margin: 0;
 }
-
+ 
 html, body {
   height: 100%;
   font-family: 'Mulish', sans-serif;
@@ -28,91 +28,101 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 
-
-/* Header section */
-header {
+/* HEADER*/
+.header {
   background-image:url("images/mobile/image-header.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;  
   max-width: 100%;
-  height: 100%;
-  
+  height: 100%;  
 }
 
-header nav{
+.header__nav {
   justify-content: space-between;
 }
 
-header nav .hidden {
+.header__menu {
   display: none;
 }
 
-.title img {
-  display: inline;
+.header__menu__item--highlight {
+  background-color: #fbfefe;
+  color: black;
+  border-radius: 20px;
+  padding: 10px;
 }
 
-header h1 { 
+.header__button {
+  border: none;
+  color: white;
+  background-color: #3ebeff;
+
+}
+
+.header__title { 
   letter-spacing: 0.2rem; 
   line-height: 1.2;
   font-family: 'EB Garamond', serif; 
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
+.header__title img {
+    display: inline;
+}
+
+
 /* MAIN */
-main {  
+.main {  
   flex-direction: column;
 }
 
-main .text,
-#text-1,
-#text-2,
+.main__text,
+.main__withImg,
 #client-testimonials {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding: 40px;   */
 }
 
-main h2{
+
+.main__title {
   padding-bottom: 20px;
   font-family: 'EB Garamond', serif; 
   text-align: center;
 }
 
-main p {
+.main__para {
   text-align: justify;
 }
 
-main .text .learn {
+.main__para--learn {
   padding-top: 20px;
   text-transform: uppercase;
   text-align: left;
   text-decoration: underline pink 0.4rem;  
 }
 
-main .text .learn:hover {
+.main__para--learn:hover {
   text-decoration: underline yellow 0.4rem;  
   cursor: pointer;
 }
 
-#text-image-1,
-#text-image-2 {
+.main__textImage {
   position: relative;
   height: 600px;
 }
 
-#text-image-1::before {
+.main__textImage--one::before {
   background-image: url(images/mobile/image-graphic-design.jpg);
 }
 
-#text-image-2::before {
+.main__textImage--two::before {
   background-image: url(images/mobile/image-photography.jpg);
 }
 
-#text-image-1::before,
-#text-image-2::before {
+.main__textImage::before {
   content:'';
   display: block;
   position: absolute;
@@ -125,62 +135,57 @@ main .text .learn:hover {
   background-size: cover;
 }
 
-#text-1,
-#text-2 {
+.main__withImg {
   position: relative;
   padding-top: 400px;
 }
 
-#text-1 {
+.main__withImg--first {
   color: rgb(7, 63, 7);
 }
 
-#text-2 {
+.main__withImg--second {
   color: rgb(4, 4, 58)
 }
 
-/* Testimonials */
-#client-testimonials {
+/* TESTIMONIALS */
+.testimonials__container,
+.testimonials__client {
   flex-direction: column;
 }
 
-.client {
-  flex-direction: column;
-}
-
-#testimonials .client img {
+.testimonials__client img {
   border-radius: 50%;
   margin: 0 auto;
 }
 
 /* DISPLAY */
-#display {
+.display {
   grid-template-columns: 50% 50%;
 }
 
 /* FOOTER */
-
-footer {
+.footer {
   background-color: #91d3c6;
   color: #60a396;
   flex-direction: column;
   align-items: center;
 }
 
-.agency {
+.footer__logo {
   font-size: xx-large;
 }
 
-#footer-nav {
+.footer__nav {
   width: 80%;
 }
 
-#footer-nav ul{
+.footer__nav ul{
   justify-content: space-between;
   list-style: none;
 }
 
-#footer-icons {
+.footer__icons {
   width: 50%;
   justify-content: space-around;
 }
