@@ -66,6 +66,34 @@ h2 {
   background-color: #3ebeff;
 }
 
+.menu-icon:hover {
+  cursor: pointer;
+}
+
+.mobileMenu--hidden {
+  display: none;
+}
+
+.mobileMenu {
+  list-style: none;
+  background-color: #fff;
+  color: #635d5d;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  z-index: 1;
+  position: fixed;
+  text-align: center;
+  transition: 0.5s;
+  top:100px;
+}
+
+.mobileMenu__item--highlight {
+  color: #000;
+  background-color: hsl(51, 100%, 49%);
+  border-radius: 30px;
+}
+
 .header__title { 
   letter-spacing: 0.2rem; 
   line-height: 1.2;
@@ -73,8 +101,9 @@ h2 {
   font-size: 1.5rem;
 }
 
-.header__title img {
+.title__image {
     display: inline;
+    text-align: center;
 }
 
 
@@ -145,7 +174,7 @@ h2 {
   background-size: cover;
 }
 
-.main__withImg {
+.main__withImg { 
   position: relative;
   padding-top: 400px;
 }
@@ -207,7 +236,9 @@ h2 {
 }
 
 /* DESKTOP VERSION */
-@media screen and (min-width: 481px) {
+
+
+@media screen and (min-width: 768px) {
   /* HEADER */
 
   .header {

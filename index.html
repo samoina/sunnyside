@@ -18,6 +18,14 @@
       <b>sunnyside</b>
     </div>
 
+    <!-- MOBILE MENU -->
+<ul class="mobileMenu mobileMenu--hidden">
+  <li class="mobileMenu__item p-1">About</li>
+  <li class="mobileMenu__item p-1">Service</li>
+  <li class="mobileMenu__item p-1">Projects</li>
+  <li class="mobileMenu__item mobileMenu__item--highlight m-5 p-1">CONTACT</li>
+</ul>
+
     <ul class="header__menu flex">
       <li class="header__menu__item">About</li>
       <li class="header__menu__item">Service</li>
@@ -26,15 +34,17 @@
     </ul>
 
     <button class="header__button">
-      <i class="fa-solid fa-bars fa-2x menu-icon"></i>
+      <i class="fa-solid fa-bars fa-2x menu-icon" onclick="expandMenu()"></i>
     </button>
   </nav>
 
   <div class="header__title text-center">
     <h1 class="pt-1 pb-1"><b>WE ARE <br>CREATIVES</b></h1>
-    <img src="images/icon-arrow-down.svg" alt="">
+    <img src="images/icon-arrow-down.svg" class="title__image" alt="">
   </div>
 </header>
+
+
 
 <!-- MAIN -->
 <main class="main flex">
@@ -159,5 +169,6 @@
   </div>
  </footer>
   
+ <script src="app.js"></script>
 </body>
 </html>
