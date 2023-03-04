@@ -33,7 +33,7 @@ h2 {
   font-family: 'Fraunces', serif;
 }
 
-
+/* MOBILE FRIENDLY VERSION FOR 375px */
 /* HEADER*/
 .header {
   background-image:url("images/mobile/image-header.jpg");
@@ -70,10 +70,14 @@ h2 {
   cursor: pointer;
 }
 
-.mobileMenu--hidden {
+.mobileMenu--hidden,
+.title__arrow--hidden {
   display: none;
 }
 
+/* 
+I had used position fixed for the mobile menu but it is very distracting, so i needed to figure a way for it to disappear as the user scrolls. Done on JS 
+*/
 .mobileMenu {
   list-style: none;
   background-color: #fff;
@@ -84,14 +88,43 @@ h2 {
   z-index: 1;
   position: fixed;
   text-align: center;
-  transition: 0.5s;
+  transition: 1s ease-in-out;
   top:100px;
+}
+
+/* this is the Div holding triangle dimensions at the corner of the mobile menu*/
+.mobileMenu__div {
+  width: 0;
+  height: 0;
+}
+
+/* 
+Use borders to style the triangle to point upwards. i positioned it absolute within its parent container and moved it around using top and left values 
+*/
+.mobileMenu__div--arrow {
+  border-top: 35px solid transparent;
+  border-bottom: 35px solid white;
+  border-left: 35px solid transparent;
+  position: absolute;
+  top: -60px;
+  right: 0;  
 }
 
 .mobileMenu__item--highlight {
   color: #000;
   background-color: hsl(51, 100%, 49%);
   border-radius: 30px;
+}
+
+/*
+Add classes to manage scrolling down and up
+*/
+.mobileMenu--scroll-up {
+  top: 100px;
+}
+
+.mobileMenu--scroll-down {
+  top: -100%;
 }
 
 .header__title { 
@@ -101,7 +134,7 @@ h2 {
   font-size: 1.5rem;
 }
 
-.title__image {
+.title__arrow {
     display: inline;
     text-align: center;
 }

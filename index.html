@@ -1,174 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="utilities.css">
   <link rel="stylesheet" href="style.css">
   <title>SUNNYSIDE LANDING PAGE</title>
 </head>
+
 <body>
-<!-- HEADER -->
-<header class="header">
-  <nav class="header__nav flex p-2">
-    <div class="header__agency">
-      <b>sunnyside</b>
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="header__nav flex p-2">
+      <div class="header__agency">
+        <b>sunnyside</b>
+      </div>      
+
+
+      
+      <!-- MOBILE MENU -->
+      <!-- Using borders to create the triangle pointer. it needs to be inside the ul otherwise it doesnt work-->
+     
+      <ul class="mobileMenu mobileMenu--hidden">
+        <div class="mobileMenu__div">
+          <div class="mobileMenu__div--arrow"></div>
+        </div>
+        <li class="mobileMenu__item p-1">About</li>
+        <li class="mobileMenu__item p-1">Service</li>
+        <li class="mobileMenu__item p-1">Projects</li>
+        <li class="mobileMenu__item mobileMenu__item--highlight m-5 p-1">CONTACT</li>
+      </ul>
+
+      <ul class="header__menu flex">
+        <li class="header__menu__item">About</li>
+        <li class="header__menu__item">Service</li>
+        <li class="header__menu__item">Projects</li>
+        <li class="header__menu__item header__menu__item--highlight m-5">CONTACT</li>
+      </ul>
+
+      <button class="header__button">
+        <i class="fa-solid fa-bars fa-2x menu-icon" onclick="expandMenu()"></i>
+      </button>
+    </nav>
+
+    <div class="header__title text-center">
+      <h1 class="pt-1 pb-1"><b>WE ARE <br>CREATIVES</b></h1>
+      <img src="images/icon-arrow-down.svg" class="title__arrow title__arrow--hidden" alt="">
+    </div>
+  </header>
+
+
+
+  <!-- MAIN -->
+  <main class="main flex">
+    <div class="main__div main__img">
+      <picture>
+        <!-- Image source when screen is wider than 375px -->
+        <source media="(min-width: 375px)" srcset="images/desktop/image-transform.jpg" sizes="">
+        <!-- Default image source for mobile responsive -->
+        <img src="images/mobile/image-transform.jpg" alt="Image with yellow background">
+      </picture>
     </div>
 
-    <!-- MOBILE MENU -->
-<ul class="mobileMenu mobileMenu--hidden">
-  <li class="mobileMenu__item p-1">About</li>
-  <li class="mobileMenu__item p-1">Service</li>
-  <li class="mobileMenu__item p-1">Projects</li>
-  <li class="mobileMenu__item mobileMenu__item--highlight m-5 p-1">CONTACT</li>
-</ul>
-
-    <ul class="header__menu flex">
-      <li class="header__menu__item">About</li>
-      <li class="header__menu__item">Service</li>
-      <li class="header__menu__item">Projects</li>
-      <li class="header__menu__item header__menu__item--highlight m-5">CONTACT</li>
-    </ul>
-
-    <button class="header__button">
-      <i class="fa-solid fa-bars fa-2x menu-icon" onclick="expandMenu()"></i>
-    </button>
-  </nav>
-
-  <div class="header__title text-center">
-    <h1 class="pt-1 pb-1"><b>WE ARE <br>CREATIVES</b></h1>
-    <img src="images/icon-arrow-down.svg" class="title__image" alt="">
-  </div>
-</header>
-
-
-
-<!-- MAIN -->
-<main class="main flex">
-  <div class="main__div main__img">
-    <picture>
-      <!-- Image source when screen is wider than 375px -->
-      <source media="(min-width: 375px)" srcset="images/desktop/image-transform.jpg" sizes="">
-      <!-- Default image source for mobile responsive -->
-      <img src="images/mobile/image-transform.jpg" alt="Image with yellow background">
-    </picture>
-  </div>
-
-  <div class="main__div main__text flex p-2">
-    <h2 class="main__title">Transform your <br>brand</h2>
-    <p class="main__para">We are a full service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
-    <p class="main__para--learnYellow">Learn More</p>
-  </div>
-
-  <div class="main__div main__img">
-    <picture>
-      <!-- Image source when screen is wider than 375px -->
-      <source media="(min-width: 375px)" srcset="images/desktop/image-stand-out.jpg" sizes="">
-      <!-- Default image source for mobile responsive -->
-      <img src="images/mobile/image-stand-out.jpg" alt="Image with pink cup">
-    </picture>
-  </div>
-
-  <div class="main__div main__text flex p-2">
-    <h2 class="main__title">Stand out to the right audience</h2>
-    <p class="main__para">Using a collaborative formula of designers, researchers, photographers, videographers and copywriters, we'll build and extend your brand in digital spaces</p>
-    <p class="main__para--learnRed">Learn More</p>
-  </div>
-
-  <div class="main__div main__textImage main__textImage--one">
-    <div class="main__withImg main__withImg--first flex p-2">
-      <h2 class="main__title">Graphic Design</h2>
-        <p class="main__para">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention</p>
+    <div class="main__div main__text flex p-2">
+      <h2 class="main__title">Transform your <br>brand</h2>
+      <p class="main__para">We are a full service creative agency specializing in helping brands grow fast. Engage your
+        clients through compelling visuals that do most of the marketing for you.</p>
+      <p class="main__para--learnYellow">Learn More</p>
     </div>
-  </div>
 
-  <div class="main__div main__textImage main__textImage--two">
-    <div class="main__withImg main__withImg--second flex p-2">
-      <h2 class="main__title">Photography</h2>
-      <p class="main__para">Increase your credibility by getting the most stunning high-quality photos that improve your business image</p>
+    <div class="main__div main__img">
+      <picture>
+        <source media="(min-width: 375px)" srcset="images/desktop/image-stand-out.jpg" sizes="">
+        <img src="images/mobile/image-stand-out.jpg" alt="Image with pink cup">
+      </picture>
     </div>
-  </div>
-</main>
 
- <!-- TESTIMONIALS -->
- <section class="testimonials">
-  <h2 class="testimonials__title text-center p-2">CLIENT TESTIMONIALS</h2>
+    <div class="main__div main__text flex p-2">
+      <h2 class="main__title">Stand out to the right audience</h2>
+      <p class="main__para">Using a collaborative formula of designers, researchers, photographers, videographers and
+        copywriters, we'll build and extend your brand in digital spaces</p>
+      <p class="main__para--learnRed">Learn More</p>
+    </div>
 
-  <div class="testimonials__container flex">
+    <div class="main__div main__textImage main__textImage--one">
+      <div class="main__withImg main__withImg--first flex p-2">
+        <h2 class="main__title">Graphic Design</h2>
+        <p class="main__para">Great design makes you memorable. We deliver artwork that underscores your brand message
+          and captures potential clients' attention</p>
+      </div>
+    </div>
 
-    <div class="testimonials__client flex text-center p-3">
-      <img src="images/image-emily.jpg" alt="Emily">
-        <p class="testimonials__para pb-2">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit</p>
+    <div class="main__div main__textImage main__textImage--two">
+      <div class="main__withImg main__withImg--second flex p-2">
+        <h2 class="main__title">Photography</h2>
+        <p class="main__para">Increase your credibility by getting the most stunning high-quality photos that improve
+          your business image</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <h2 class="testimonials__title text-center p-2">CLIENT TESTIMONIALS</h2>
+
+    <div class="testimonials__container flex">
+
+      <div class="testimonials__client flex text-center p-3">
+        <img src="images/image-emily.jpg" alt="Emily">
+        <p class="testimonials__para pb-2">We put our trust in Sunnyside and they delivered, making sure our needs were
+          met and deadlines were always hit</p>
         <h2>Emily R.</h2>
         <h3>Marketing Director</h3>
-    </div>
+      </div>
 
-    <div class="testimonials__client flex text-center p-3">
-      <img src="images/image-thomas.jpg" alt="Thomas">
-        <p class="testimonials__para pb-2">Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
+      <div class="testimonials__client flex text-center p-3">
+        <img src="images/image-thomas.jpg" alt="Thomas">
+        <p class="testimonials__para pb-2">Sunnyside's enthusiasm coupled with their keen interest in our brand's
+          success made it a satisfying and enjoyable experience.</p>
         <h2>Thomas S.</h2>
         <h3>Chief Operating Officer</h3>
-    </div>
+      </div>
 
-    <div class="testimonials__client flex text-center p-3">
-      <img src="images/image-jennie.jpg" alt="Jennie">
-        <p class="testimonials__para pb-2">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+      <div class="testimonials__client flex text-center p-3">
+        <img src="images/image-jennie.jpg" alt="Jennie">
+        <p class="testimonials__para pb-2">Incredible end result! Our sales increased over 400% when we worked with
+          Sunnyside. Highly recommended!</p>
         <h2>Jennie F.</h2>
         <h3>Business Owner</h3>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DISPLAY -->
+  <section class="display grid">
+    <picture>
+      <source media="(min-width: 375px)" srcset="images/desktop/image-gallery-milkbottles.jpg" sizes="">
+
+      <img src="images/mobile/image-gallery-milkbottles.jpg" alt="">
+    </picture>
+
+    <picture>
+      <source media="(min-width: 375px)" srcset="images/desktop/image-gallery-orange.jpg" sizes="">
+
+      <img src="images/mobile/image-gallery-orange.jpg" alt="">
+    </picture>
+
+    <picture>
+      <source media="(min-width: 375px)" srcset="images/desktop/image-gallery-cone.jpg" sizes="">
+
+      <img src="images/mobile/image-gallery-cone.jpg" alt="">
+    </picture>
+
+    <picture>
+      <source media="(min-width: 375px)" srcset="images/desktop/image-gallery-sugarcubes.jpg" sizes="">
+
+      <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="">
+    </picture>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer flex">
+    <div class="footer__logo p-1"><b>sunnyside</b></div>
+    <div class="footer__nav pb-2">
+      <ul class="footer__list flex">
+        <li>About</li>
+        <li>Service</li>
+        <li>Projects</li>
+      </ul>
     </div>
 
-  </div>
- </section>
+    <div class="footer__icons footer__icons--position flex pb-3">
+      <i class="fa-brands fa-square-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-pinterest"></i>
+    </div>
+  </footer>
 
- <!-- DISPLAY -->
- <section class="display grid">
-  <picture>
-    <source media="(min-width: 375px)" srcset="images/desktop/image-gallery-milkbottles.jpg" sizes="">
-  
-    <img src="images/mobile/image-gallery-milkbottles.jpg" alt="">
-  </picture>
-
-  <picture>
-    <source media="(min-width: 375px)" srcset="images/desktop/image-gallery-orange.jpg" sizes="">
-  
-    <img src="images/mobile/image-gallery-orange.jpg" alt="">
-  </picture>
-
-  <picture>
-    <source media="(min-width: 375px)" srcset="images/desktop/image-gallery-cone.jpg" sizes="">
-  
-    <img src="images/mobile/image-gallery-cone.jpg" alt="">
-  </picture>
-
-  <picture>
-    <source media="(min-width: 375px)" srcset="images/desktop/image-gallery-sugarcubes.jpg" sizes="">
-  
-    <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="">
-  </picture>
- </section>
-
- <!-- FOOTER -->
- <footer class="footer flex">
-  <div class="footer__logo p-1"><b>sunnyside</b></div>
-  <div class="footer__nav pb-2">
-    <ul class="footer__list flex">
-      <li>About</li>
-      <li>Service</li>
-      <li>Projects</li>
-    </ul>
-  </div>
-
-  <div class="footer__icons footer__icons--position flex pb-3">
-    <i class="fa-brands fa-square-facebook"></i>
-    <i class="fa-brands fa-instagram"></i>
-    <i class="fa-brands fa-twitter"></i>
-    <i class="fa-brands fa-pinterest"></i>
-  </div>
- </footer>
-  
- <script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
+
 </html>
