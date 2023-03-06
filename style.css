@@ -101,7 +101,7 @@ I had used position fixed for the mobile menu but it is very distracting, so i n
 /* 
 Use borders to style the triangle to point upwards. i positioned it absolute within its parent container and moved it around using top and left values 
 */
-.mobileMenu__div--arrow {
+.mobileMenu__arrow {
   border-top: 35px solid transparent;
   border-bottom: 35px solid white;
   border-left: 35px solid transparent;
