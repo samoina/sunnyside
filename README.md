@@ -25,7 +25,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github repo code](https://github.com/samoina/sunnyside)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Netlify Link](https://clinquant-torrone-f95ee0.netlify.app/)
 
 ## My process
 I took up this challenge a second time (because the last time I did not complete it!)This time, however, with the motivation of doing it a a group challenge, I was able to complete it and even write this README. I first did the HTML and CSS before finishing with the small bit of Javascript required to toggle my mobile menu.
@@ -54,7 +54,7 @@ I took up this challenge a second time (because the last time I did not complete
 
 2. I also saw the importance of adding a utilities.css file to handle repetitive styling such as padding, flex and margins.
 
-3. I learned that to display different images, depending on certain criteria, my best bet would be to use the picture element as it provides multiple sources for the img element. This had been a bit problematic for me because i was wondering how to tweak the image sources without clunky code.
+3. I learned that to display different images, depending on certain criteria, my best bet would be to use the picture element as it provides multiple sources for the img element. This had been a bit problematic for me because I was wondering how to tweak the image sources without clunky code.
 
 
 ```html
@@ -66,7 +66,7 @@ I took up this challenge a second time (because the last time I did not complete
       </picture>
 ```
 
-4. I needed to re-order the elements in the main section and wasn't sure how to do that since I had already used Flex. On mobile the sections stacked ontop of each other in a column. On desktop, they would need to span into two columns. This necessitated my creating a 2D approach with flex for the MAIN section descendants. I set flex-grow and flex-shrink to 0, then controlling this using % (shortand: flex). the last value is the flex basis - the initial size occupied before space is distributed as below.
+4. I needed to re-order the elements in the main section and wasn't sure how to do that since I had already used Flex. On mobile the sections stacked ontop of each other in a column. On desktop, they would need to span into two columns. This necessitated my creating a 2D approach with flex for the MAIN section descendants. I set flex-grow and flex-shrink to 0, then controlling this using % (shortand: flex). The last value is the flex basis - the initial size occupied before space is distributed as below.
 
 ```css
  .main >* {
