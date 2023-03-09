@@ -305,6 +305,8 @@ Add classes to manage scrolling down and up
   .header__title br{
     display: none;
   }
+
+  .mobileMenu,
   .header__button {
     display: none;
   }
