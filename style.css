@@ -143,6 +143,7 @@ Add classes to manage scrolling down and up
 /* MAIN */
 .main {  
   flex-direction: column;
+  max-width: 1024px;
 }
 
 .main__text,
@@ -271,7 +272,7 @@ Add classes to manage scrolling down and up
 /* DESKTOP VERSION */
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48em) {
   /* HEADER */
 
   .header {
@@ -313,6 +314,7 @@ Add classes to manage scrolling down and up
 
   /* MAIN */
   .main {
+
     flex-direction: row;
     flex-wrap: wrap;
   }
