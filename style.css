@@ -314,7 +314,7 @@ Add classes to manage scrolling down and up
 
   /* MAIN */
   .main {
-
+    max-width: 64rem;
     flex-direction: row;
     flex-wrap: wrap;
   }
