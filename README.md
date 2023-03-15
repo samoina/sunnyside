@@ -30,6 +30,8 @@ Users should be able to:
 ## My process
 I took up this challenge a second time (because the last time I did not complete it!)This time, however, with the motivation of doing it a a group challenge, I was able to complete it and even write this README. I first did the HTML and CSS before finishing with the small bit of Javascript required to toggle my mobile menu.
 
+### Built with
+
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
@@ -81,6 +83,8 @@ I took up this challenge a second time (because the last time I did not complete
 - [BEM Naming Convention](https://getbem.com/introduction/) is a great resource for anyone who'd like a way to name their classes and keep track of them. I loved this approach and look forward to using it in my code.
 
 - Jemima Abu wrote a fantastic resource on [Creating a smart navbar](https://css-tricks.com/creating-a-smart-navbar-with-vanilla-javascript/) using vanilla Javascript. This helped me understand some bits of the scroll event on the window, as well as introduced me to the throttle function which i incorporated in this code. 
+
+## Author
 
 - Website - [Samoina Lives](https://samoinalives.wordpress.com/)
 - Frontend Mentor - [@samoina](https://www.frontendmentor.io/profile/samoina)
